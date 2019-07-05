@@ -25,7 +25,9 @@ public class ComposeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_compose);
         client = TwitterApp.getRestClient(this);
+
     }
+
 
     public void onClick(View view) {
         EditText simpleEditText = (EditText) findViewById(R.id.et_simple);
@@ -51,4 +53,6 @@ public class ComposeActivity extends AppCompatActivity {
             }
         });
     }
+
+
 }
