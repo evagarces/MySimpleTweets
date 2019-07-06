@@ -33,12 +33,6 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         notifyDataSetChanged();
     }
 
-    // add a list of items -- change to type used
-//    public void addAll(List<Tweet> list) { //$$
-//        mTweets.addAll(list);
-//        notifyDataSetChanged();
-//    }
-
     // for each row, inflate the layout and cache references into ViewHolder
     public ViewHolder onCreateViewHolder(ViewGroup parent, int ViewType ) {
         context =  parent.getContext();
