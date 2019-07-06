@@ -34,10 +34,10 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
     }
 
     // add a list of items -- change to type used
-    public void addAll(List<Tweet> list) { //$$
-        mTweets.addAll(list);
-        notifyDataSetChanged();
-    }
+//    public void addAll(List<Tweet> list) { //$$
+//        mTweets.addAll(list);
+//        notifyDataSetChanged();
+//    }
 
     // for each row, inflate the layout and cache references into ViewHolder
     public ViewHolder onCreateViewHolder(ViewGroup parent, int ViewType ) {
@@ -90,7 +90,6 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
             tvBody = (TextView) itemView.findViewById(R.id.tvBody);
             tvTime = (TextView) itemView.findViewById(R.id.tvTime);
         }
-
     }
     // getRelativeTimeAgo("Mon Apr 01 21:16:23 +0000 2014");
     public String getRelativeTimeAgo(String rawJsonDate) {
